@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Eye Tv</title>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/main.scss" rel="stylesheet" type="text/css" />
+    <link href="css/hmbg.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="Sidenav" class="sidenav">
+        <nav class="sidenav__nav">
+          <a
+            href="javascript:void(0)"
+            class="sidenav__closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#watch">Watch</a>
+          <a href="#listen">Listen</a>
+          <a href="#read">Read</a>
+          <a href="#look">Look</a>
+        </nav>
+      </div>
+      <div class="hmbg-menu">
+        <span id="hmbg" onclick="openNav()">&#9776; </span>
+        <a href="index.html">
+          <img
+            class="center"
+            src="images/live-eye-logo-mobile-white.png"
+            alt="Live Eye Tv logo"
+          />
+        </a>
+      </div>
+
+      <div class="lg-scrn-header" id="lg-scrn-header">
+        <div class="lg-scrn-header__top-row" id="top-header-l">
+          <span class="icon-spacing">
+            <a href="https://www.facebook.com/LiveEyeTv/" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/LiveEyeTv" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://soundcloud.com/live-eye-tv" target="_blank">
+              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC6DUHCW_4r3BKtJRhEGS-1w"
+              target="_blank"
+            >
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+          </span>
+        </div>
+        <div class="lg-scrn-header__top-row" id="top-header-r">
+          <span class="text-right"><a href="about.html">about/contact</a></span>
+        </div>
+        <div class="lg-scrn-header__bottom-row" id="menu-lg-col">
+          <nav id="slide-nav">
+            <ul>
+              <li><a href="#watch">watch</a></li>
+              <li><a href="#listen">listen</a></li>
+              <li><a href="#read">read</a></li>
+              <li><a href="#look">look</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="lg-scrn-header__bottom-row logo" id="logo-lg-col">
+          <a href="index.html">
+            <img
+              id="logo-lg"
+              src="images/live-eye-logo-lg-white.png"
+              alt="Live Eye Tv logo"
+            />
+          </a>
+        </div>
+
+        <div class="lg-scrn-header__bottom-row search" id="search-lg-col">
+          <div class="search-bar-container">
+            <script
+              async
+              src="https://cse.google.com/cse.js?cx=010904596819390478858:u4f4wxcu2fm"
+            ></script>
+            <div class="gcse-search"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="behind-header" id="behind-header"></div>
+
+    <div class="main" id="main">
+      <div class="Frow">
+        <div class="three-col-lg">
+          <div class="card">
+            <a href="Mike_Polizze_Wishing_Well.html">
+              <img
+                class="card__image"
+                src="images/mike-polizze-wishing-well.jpg"
+                alt="Mike Polizze"
+              />
+              <div class="caption">
+                <h2 class="caption__h2--lg">
+                  <span class="caption__category">Listen:</span> Mike Polizze
+                  “Wishing Well”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="read/Flaming_Tunes_re-issue.html">
+              <img
+                class="card__image"
+                src="images/flaming_tunes.jpg"
+                alt="Flaming Tunes"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Music News:</span> Flaming
+                  Tunes Self-Titled Sole Release Re-issued On Vinyl by Superior
+                  Viaduct
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Exhalants_Bang.html">
+              <img
+                class="card__image"
+                src="images/exhalants.jpg"
+                alt="Exhalants"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Exhalants
+                  “Bang”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="three-col">
+          <div class="card">
+            <a href="vintage_crop-Gridlock.html">
+              <img
+                class="card__image"
+                src="images/vintage-crop-promo.png"
+                alt="Vintage Crop"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Vintage Crop
+                  “Gridlock”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="read/fem.html">
+              <img class="card__image" src="images/FEM-promo.jpg" alt="FEM" />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">MUSIC NEWS:</span> Japanese
+                  Musician Cuushe Returns As FEM - Listen to “Light”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col-lg">
+          <div class="card">
+            <a href="read/evicshen_hairbirth.html">
+              <img
+                class="card__image"
+                src="images/evicshen-promo2.jpg"
+                alt="Evicshen"
+              />
+              <div class="caption">
+                <h2 class="caption__h2--lg">
+                  <span class="caption__category">Music News:</span> Evicshen to
+                  Release ‘Hair Birth’ LP with Record Jacket as Fully
+                  Functioning Speaker
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="row watch-row">
+        <div class="title-row">
+          <h1 id="watch">Watch</h1>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Helena_Deland_Lylz.html">
+              <img
+                class="card__image"
+                src="images/helena-deland.jpg"
+                alt="Helena Deland"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Helena Deland
+                  “Lylz”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Deer-Venom-Not-Today.html">
+              <img
+                class="card__image"
+                src="images/deer-venom-supernal-females-promo.png"
+                alt="Deer Venom"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Deer Venom “Not
+                  Today”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Rival_Consoles_Sudden.html">
+              <img
+                class="card__image"
+                src="images/rival-consoles.jpg"
+                alt="Rival Consoles"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Rival Consoles
+                  “Sudden Awareness of Now”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Black_Marble_In_Manchester.html">
+              <img
+                class="card__image"
+                src="images/black_marble.png"
+                alt="Black Marble"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Black Marble “In
+                  Manchester”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Mike_Polizze_Cheewawa.html">
+              <img
+                class="card__image"
+                src="images/mike-polizze-promo.jpg"
+                alt="Mike Polizze"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Mike Polizze
+                  “Cheewawa”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Sonic_Boom_Tawkin_Tekno.html">
+              <img
+                class="card__image"
+                src="images/sonic-boom-tawkin-tekno.jpg"
+                alt="Sonic Boom"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Sonic Boom
+                  “Tawkin Tekno”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="evicshen_fever_pitch.html">
+              <img
+                class="card__image"
+                src="images/Evicshen_fever_pitch.png"
+                alt="Evicshen"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Evicshen “Fever
+                  Pitch”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="Bee_Bee_Sea_Daily_Jobs.html">
+              <img
+                class="card__image"
+                src="images/bee-bee-sea-promo.png"
+                alt="Bee Bee Sea"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Bee Bee Sea
+                  “Daily Jobs”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <span class="archive-link"><a href="videos.html">more videos</a></span>
+      </section>
+
+      <section class="row live-seattle">
+        <div class="title-row live">
+          <img src="images/LiveInSeattle2.png" alt="Live in Seattle" />
+          <p>
+            Live Eye Tv began in 2004 as a cable access show in Seattle that
+            focused on filming bands at local venues. Over the years we've put
+            together a pretty nice colletion of footage of local and touring
+            acts.
+          </p>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Lorelle_Meets_Obsolete_Live.html">
+              <img class="card__image" src="images/Lorelle.png" alt="Lorelle" />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Lorelle Meets
+                  the Obsolete “What’s Holding You” Live @ the Chop Suey
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Constant_Lovers_Snickerdoodle_Live.html">
+              <img
+                class="card__image"
+                src="images/constant-lovers.png"
+                alt="Constant Lovers"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Constant Lovers
+                  “Snickerdoodle” Live @ Chop Suey
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Thee_Oh_Sees_Live.html">
+              <img
+                class="card__image"
+                src="images/oh_sees.jpg"
+                alt="Thee Oh Sees"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Thee Oh Sees
+                  Live @ The Vera Project
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="King_Khan_Shivers_Down_My_Spine_live.html">
+              <img
+                class="card__image"
+                src="images/KingKhan.png"
+                alt="King Khan"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> King Khan & the
+                  Shrines "Shivers Down My Spine" Live In Seattle
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Guitar_Wolf_Live.html">
+              <img
+                class="card__image"
+                src="images/GuitarWolf.png"
+                alt="Guitar Wolf"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Watch:</span> Guitar Wolf Live
+                  @ Chop Suey
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <span class="archive-link"
+          ><a href="live_seattle.html">more live in seattle</a></span
+        >
+      </section>
+
+      <section class="row listen-row">
+        <div class="title-row">
+          <h1 id="listen">Listen</h1>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="vintage_crop-Gridlock.html">
+              <img
+                class="card__image"
+                src="images/vintage-crop-promo.png"
+                alt="Vintage Crop"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Vintage Crop
+                  “Gridlock”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Craig_Kupka_Crystals.html">
+              <img
+                class="card__image"
+                src="images/craig-kupka-crystals.jpg"
+                alt="Craig Kupka"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Craig Kupka
+                  ‘Crystals: New Music for Relaxation #2’ LP
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col-lg">
+          <div class="card">
+            <a href="Art_Feynman_I_Can_Dream.html">
+              <img
+                class="card__image"
+                src="images/art-fenyman-post.jpg"
+                alt="Art Fenyman"
+              />
+              <div class="caption">
+                <h2 class="caption__h2--lg">
+                  <span class="caption__category">Listen:</span> Art Feynman “I
+                  Can Dream”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col-lg">
+          <div class="card">
+            <a href="Deer_Venom_All_Right_With_Me.html">
+              <img
+                class="card__image"
+                src="images/deer-venom-All-right.jpg"
+                alt="Deer Venom"
+              />
+              <div class="caption">
+                <h2 class="caption__h2--lg">
+                  <span class="caption__category">Listen:</span> Deer Venom “All
+                  Right With Me”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Rival_Consoles_Vibrations_on_a_String.html">
+              <img
+                class="card__image"
+                src="images/rival-consoles-promo.jpg"
+                alt="Rival Consoles"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Rival Consoles
+                  “Vibrations on a String”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Sephy_Brujo_Chueco.html">
+              <img class="card__image" src="images/sephy.jpg" alt="Sephy" />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Listen:</span> Sephy “Brujo
+                  Chueco”
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <span class="archive-link"><a href="listen.html">more listen</a></span>
+      </section>
+
+      <section class="row read-row">
+        <div class="title-row">
+          <h1 id="read">Read</h1>
+        </div>
+
+        <div class="four-col">
+          <div class="card">
+            <a href="read/Wet_Fruit_Interview.html">
+              <img
+                class="card__image"
+                src="images/wet-fruit-band.jpg"
+                alt="Wet Fruit"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Interview:</span> Wet Fruit
+                  Discusses Their Self-Titled Debut Cassette on Halfshell
+                  Records
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/Thomas_Werbrouck_Interview.html">
+              <img
+                class="card__image"
+                src="images/thomas_werbrouck.jpg"
+                alt="Thomas Werbrouck"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Interview:</span> Thomas
+                  Werbrouck Discusses KRANKLAND’s Debut LP ‘Wanderrooms’
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/Delta_5.html">
+              <img
+                class="card__image"
+                src="images/delta-5-promo.jpg"
+                alt="Delta 5"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Label News:</span> Kill Rock
+                  Stars to Release Delta 5’s ‘Singles and Sessions 1979-81’ on
+                  Vinyl
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/Zumvo_Release.html">
+              <img
+                class="card__image"
+                src="images/zumvo-promo.jpg"
+                alt="Zumvo"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Music News:</span> Zumvo
+                  Releases Limited Edition Cassette ‘Разводы’ Via CANT
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/The_Gods_Themselves_interview.html">
+              <img
+                class="card__image"
+                src="images/the-gods-themselves-3-promo.jpg"
+                alt="The Gods Themselves"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Interview:</span> The Gods
+                  Themselves Discuss ‘New Excuse’ LP, Life Inside the Tech Boom,
+                  and Quarantine
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/m00m_album_review.html">
+              <img class="card__image" src="images/moom-post.jpg" alt="Moom" />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Album Review:</span> m00m’s
+                  Self-Titled Debut Takes Krautrock to Outer Space
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="card">
+            <a href="read/Jelodanti_release_Lady_Boy_Rose_Calamine.html">
+              <img
+                class="card__image"
+                src="images/ladyboy.jpg"
+                alt="Lady Boy Records"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Label News:</span> Lady Boy
+                  Releases “Rose Calamine” Limited Edition 12″ Via Jelodanti
+                  Records
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <span class="archive-link"
+          ><a href="interviews.html">more read</a></span
+        >
+      </section>
+
+      <section class="row look-row">
+        <div class="title-row">
+          <h1 id="look">Look</h1>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="tropical_fuck_storm_photos.html">
+              <img
+                class="card__image"
+                src="images/Tropical_Fuck_Storm.jpg"
+                alt="Tropical Fuck Storm"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Photos:</span> Tropical Fuck
+                  Storm Live @ Barboza in Seattle
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Las_Rosas_photos.html">
+              <img
+                class="card__image"
+                src="images/Las_Rosas.jpg"
+                alt="Las Rosas"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Photos:</span> Las Rosas Live
+                  @ Chop Suey In Seattle
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="The_Seshen_photos.html">
+              <img class="card__image" src="images/Seshen.jpg" alt="Seshen" />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Photos:</span> The Seshen Live
+                  @ Sunset Tavern
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="James_Supercave_photos.html">
+              <img
+                class="card__image"
+                src="images/james-supercave-post.jpg"
+                alt="James Supercave"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Photos:</span> James Supercave
+                  Live @ Sunset Tavern
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="three-col">
+          <div class="card">
+            <a href="Dead_Cross_photos.html">
+              <img
+                class="card__image"
+                src="images/dead_cross.jpg"
+                alt="Dead Cross"
+              />
+              <div class="caption">
+                <h2 class="caption__h2">
+                  <span class="caption__category">Photos:</span> Dead Cross Live
+                  @ The Showbox
+                </h2>
+                <hr />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <span class="archive-link"><a href="photos.html">more look</a></span>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__row">
+          <img src="images/live-eye-logo-lg-white.png" alt="Live Eye Tv logo" />
+        </div>
+        <div class="footer__row">
+          <p>Music+Video=Pure Sonic Desire!</p>
+        </div>
+        <div class="footer__row--nav">
+          <nav>
+            <a href="live_seattle.html">live&nbsp;in&nbsp;Seattle</a>
+            <a href="photos.html">photos</a>
+            <a href="interviews.html">interviews</a>
+            <a href="label_news.html">label&nbsp;news</a>
+            <a href="music_news.html">music&nbsp;news</a>
+            <a href="album_reviews.html">album&nbsp;reviews</a>
+          </nav>
+          <div class="footer__row--about">
+            <a href="about.html"> about/contact </a>
+          </div>
+        </div>
+        <div class="footer__row">
+          <span class="footer__row--social-icons">
+            <a href="https://www.facebook.com/LiveEyeTv/">
+              <i class="fa fa-facebook circle-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/LiveEyeTv">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://soundcloud.com/live-eye-tv">
+              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC6DUHCW_4r3BKtJRhEGS-1w">
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/smoothscroll.js"></script>
+    <script src="javascript/hmbg.js"></script>
+    <script src="javascript/header-shrink.js"></script>
+  </body>
+</html>
