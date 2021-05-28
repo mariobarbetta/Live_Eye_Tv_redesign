@@ -1,0 +1,473 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+html {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+body {
+  color: black;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+}
+a:hover {
+  font-weight: bold;
+  color: #ce1212;
+}
+
+.archive-link a {
+  color: black;
+}
+.archive-link a:hover {
+  color: #ce1212;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+  position: relative;
+  z-index: 5;
+  margin: 0 20px 0 10%;
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+  color: black;
+}
+h1::after {
+  position: absolute;
+  top: 40%;
+  right: 9%;
+  left: 110px;
+  display: block;
+  height: 4px;
+  margin-top: -3px;
+  content: "";
+  background: black;
+}
+
+footer p {
+  letter-spacing: 6px;
+}
+
+footer a {
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: rgba(14, 14, 14, 0.75);
+}
+
+.main {
+  position: relative;
+  margin-top: 85px;
+  margin-bottom: 420px;
+  background-color: whitesmoke;
+}
+
+footer {
+  font-size: 0.6em;
+  position: fixed;
+  z-index: -9;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10% 40px 10%;
+  text-align: center;
+  color: silver;
+  background-color: rgba(14, 14, 14, 0.8);
+}
+footer img {
+  width: 200px;
+  height: auto;
+  padding-top: 5em;
+  padding-bottom: 0.8em;
+}
+
+.icon-spacing {
+  letter-spacing: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.about-link {
+  font-size: 0.8em;
+  letter-spacing: 6px;
+}
+
+li {
+  float: left;
+}
+
+.logo {
+  max-width: 33%;
+  text-align: center;
+  flex: 33%;
+}
+
+.archive-link {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    margin-top: -15px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  .behind-header {
+    display: block;
+  }
+}
+.lg-scrn-header {
+  display: flex;
+  height: 168px;
+  padding: 8px;
+  transition: height 200ms ease-in-out, align-items 200ms ease-in-out;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: space-between;
+}
+.lg-scrn-header__top-row {
+  max-width: 50%;
+  flex: 50%;
+}
+.lg-scrn-header__bottom-row {
+  max-width: 33%;
+  flex: 33%;
+}
+
+.search-bar-container {
+  float: right;
+  width: 60%;
+  margin-bottom: -7px;
+}
+
+/* Google search bar */
+.gsc-control-cse {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.gsc-search-button-v2:hover {
+  border-color: #ce1212 !important;
+}
+
+.row, .footer__row--nav {
+  display: flex;
+  margin: 15px 0;
+  padding: 40px 0 65px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row--live-seattle {
+  background-color: silver;
+}
+.row--read {
+  background-color: #e6e6e6;
+}
+.row__title {
+  max-width: 100%;
+  margin-bottom: 30px;
+  flex: 100%;
+}
+.row__title--live {
+  margin: 10px 10%;
+  padding: 15px 10px 30px 10px;
+}
+.row__title--live img {
+  float: left;
+  width: auto;
+  margin-right: 8px;
+}
+.row__title--live p {
+  padding-top: 20px;
+}
+
+.one-col, .footer__row--about {
+  max-width: 100%;
+  padding-top: 20px;
+  flex: 100%;
+}
+
+.three-col {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 28%;
+  max-height: 280px;
+  margin: 5px;
+  padding: 0 2px;
+  text-overflow: ellipsis;
+  flex: 28%;
+}
+
+.three-col-lg {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 40%;
+  max-height: 280px;
+  margin: 5px;
+  padding: 0 2px;
+  flex: 40%;
+}
+
+.four-col {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 20%;
+  max-height: 350px;
+  margin: 5px;
+  padding: 2px;
+  flex: 20%;
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover .caption {
+  padding: 10px 4px;
+}
+.card:hover hr {
+  width: 95%;
+  border-width: 1px;
+}
+.card:hover img {
+  opacity: 0.4;
+}
+.card__image {
+  width: 100%;
+  transition: opacity ease-in 250ms;
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  right: 2px;
+  bottom: 0px;
+  left: 2px;
+  padding: 4px 4px;
+  transition: padding ease-in 250ms;
+  color: white;
+  background-color: rgba(14, 14, 14, 0.8);
+}
+.caption__h2 {
+  font-size: 0.7em;
+  font-weight: 100;
+  margin: 0;
+  padding: 8px;
+}
+.caption__h2--lg {
+  padding: 8px;
+}
+.caption__category {
+  font-size: 0.9em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 4px 12px 7px 12px;
+  vertical-align: 5px;
+  letter-spacing: normal;
+  color: white;
+  border-radius: 50px;
+  background-image: linear-gradient(220deg, #ce1212, #940b0b);
+}
+.caption hr {
+  width: 0;
+  margin-left: 2%;
+  transition: width ease-in-out 250ms;
+  border-width: 0;
+  border-color: #ce1212;
+}
+
+.footer__row {
+  max-width: 100%;
+  flex: 100%;
+}
+.footer__row--about {
+  padding-top: 20px;
+}
+.footer__row--social-icons {
+  font-size: 1.8em;
+}
+.footer__row a {
+  letter-spacing: 18px;
+}
+
+@media screen and (min-width: 900px) {
+  .hmbg-menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
