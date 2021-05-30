@@ -280,6 +280,19 @@ li {
     display: block;
   }
 }
+@media screen and (min-width: 900px) {
+  div.main {
+    margin-top: -15px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  .behind-header {
+    display: block;
+  }
+}
 .lg-scrn-header {
   display: flex;
   height: 168px;
@@ -464,9 +477,85 @@ li {
   letter-spacing: 18px;
 }
 
+@media screen and (max-width: 579px) {
+  h1::after {
+    right: 6%;
+  }
+
+  .row, .footer__row--nav {
+    padding: 20px 5px 45px 5px;
+  }
+
+  .three-col-lg,
+.three-col,
+.four-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 580px) and (max-width: 899px) {
+  .three-col-lg,
+.three-col,
+.four-col {
+    flex: 45%;
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .lg-scrn-header {
+    display: none;
+  }
+}
 @media screen and (min-width: 900px) {
   .hmbg-menu {
     display: none;
+  }
+}
+.sidenav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  width: 0;
+  height: 100%;
+  padding-top: 60px;
+  transition: 0.5s;
+  background-color: #111;
+}
+.sidenav a {
+  display: block;
+  padding: 8px 8px 8px 32px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+.sidenav a:hover {
+  color: white;
+  text-shadow: 2px 2px 5px white;
+}
+.sidenav__closebtn {
+  font-size: 40px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  margin-left: 50px;
+}
+
+#hmbg {
+  float: left;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
   }
 }
 
