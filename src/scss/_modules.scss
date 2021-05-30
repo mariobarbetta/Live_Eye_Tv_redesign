@@ -253,6 +253,38 @@
   }
 }
 
+@media screen and (max-width: 579px) {
+  h1::after {
+    right: 6%;
+  }
+
+  .row {
+    padding: 20px 5px 45px 5px;
+  }
+
+  .three-col-lg,
+  .three-col,
+  .four-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 899px) {
+  .three-col-lg,
+  .three-col,
+  .four-col {
+    flex: 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .lg-scrn-header {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .hmbg-menu {
     display: none;

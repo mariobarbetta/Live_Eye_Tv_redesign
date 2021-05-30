@@ -91,3 +91,17 @@ li {
     display: block;
   }
 }
+
+@media screen and (min-width: 900px) {
+  div.main {
+    margin-top: -15px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  .behind-header {
+    display: block;
+  }
+}
