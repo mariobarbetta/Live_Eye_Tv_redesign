@@ -26,6 +26,12 @@
   }
 }
 
+.slide-nav {
+  position: relative;
+  left: 0;
+  transition: left ease-in-out 250ms;
+}
+
 .search-bar-container {
   float: right;
 
