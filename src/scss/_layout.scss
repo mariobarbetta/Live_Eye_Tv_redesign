@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 header {
   position: fixed;
   z-index: 99;
@@ -18,17 +20,67 @@ header {
   background-color: whitesmoke;
 }
 
-//aside
+//archive pages
+.archive__main-content {
+  flex: 70%;
+  max-width: 70%;
+}
 
+//aside
+aside {
+  position: sticky;
+  top: -200px;
+
+  max-width: 26%;
+  height: fit-content;
+  padding: 1rem;
+  margin-top: 33px;
+  margin-left: 18px;
+
+  background-color: $color2;
+
+  flex: 26%;
+  align-items: center;
+
+  div {
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  hr {
+    width: 100%;
+
+    border-width: 2px;
+    border-color: black;
+  }
+
+  img {
+    display: block;
+
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+  .merch {
+    float: right;
+  }
+}
+
+//footer
 footer {
-  font-size: 0.6em;
+  font-size: 0.6rem;
 
   position: fixed;
   z-index: -9;
   bottom: 0;
 
   width: 100%;
-  padding: 0 10% 40px 10%;
+  padding: 0 10% 50px 10%;
 
   text-align: center;
 
@@ -38,8 +90,8 @@ footer {
   img {
     width: 200px;
     height: auto;
-    padding-top: 5em;
-    padding-bottom: 0.8em;
+    padding-top: 3.5rem;
+    padding-bottom: 0.7rem;
   }
 }
 
@@ -54,7 +106,7 @@ footer {
 .about-link {
   display: block;
 
-  font-size: 0.8em;
+  font-size: 0.8rem;
 
   letter-spacing: 6px;
 }
@@ -82,20 +134,6 @@ li {
 
 @media screen and (min-width: 900px) {
   .main {
-    margin-top: -15px;
-  }
-
-  header {
-    padding-bottom: 20px;
-  }
-
-  .behind-header {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  div.main {
     margin-top: -15px;
   }
 
