@@ -114,6 +114,27 @@
 
 // Archive pages
 
+.archive {
+  display: flex;
+
+  margin-top: 15px;
+  padding: 0 5% 50px 5%;
+
+  color: black;
+
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__h1 {
+    font-size: 2.2rem;
+
+    margin: 15px 0 50px 0;
+
+    text-align: center;
+    letter-spacing: 3px;
+  }
+}
+
 .archive-row {
   display: flex;
 
@@ -233,6 +254,11 @@
       height: 280px;
 
       flex: 60%;
+
+      .caption {
+        left: 0;
+        width: 101%;
+      }
     }
   }
 }
@@ -311,7 +337,7 @@ figcaption {
 
   display: block;
 
-  margin: 0 5px 0 0;
+  margin: 0 5px 5px 0;
   padding: 0;
 
   text-align: right;
@@ -462,29 +488,6 @@ figcaption {
   }
 }
 
-// Archive pages
-
-.archive {
-  display: flex;
-
-  margin-top: 15px;
-  padding: 0 5% 50px 5%;
-
-  color: black;
-
-  justify-content: center;
-  flex-wrap: wrap;
-
-  &__h1 {
-    font-size: 2.2rem;
-
-    margin: 15px 0 50px 0;
-
-    text-align: center;
-    letter-spacing: 3px;
-  }
-}
-
 // Side bar
 .aside-social-icons a {
   font-size: 2rem;
@@ -540,6 +543,26 @@ aside .fa-soundcloud {
 
   transform: rotate(-10deg);
   text-align: center;
+}
+
+/* Make youtube embeds responsive */
+.iframe-container {
+  position: relative;
+
+  clear: both;
+
+  width: 80%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
 }
 
 // Footer
