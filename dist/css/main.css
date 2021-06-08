@@ -518,6 +518,26 @@ li {
   width: 101%;
 }
 
+.read-archive-nav {
+  font-size: 1.5em;
+  padding-bottom: 0;
+}
+.read-archive-nav a {
+  padding: 0 12px;
+  text-decoration: underline;
+  color: #ce1212;
+}
+.read-archive-nav a:hover {
+  color: black;
+}
+
+.read-archive-h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
 .article-container {
   display: flex;
   margin-top: 15px;
