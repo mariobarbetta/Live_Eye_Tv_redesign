@@ -766,6 +766,29 @@ aside .fa-soundcloud {
   height: 100%;
 }
 
+.carousel {
+  width: 90%;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background: #2d2e2d;
+  border-radius: 5px;
+}
+
+.flickity-page-dots {
+  bottom: 2% !important;
+}
+
+ol.flickity-page-dots {
+  display: block;
+  width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .footer__row {
   max-width: 100%;
   flex: 100%;
