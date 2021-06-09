@@ -396,16 +396,16 @@ li {
   content: "";
   background: black;
 }
-.row__title--live {
+.row__title--live, .archive__live-seattle-heading {
   margin: 10px 10%;
   padding: 15px 10px 30px 10px;
 }
-.row__title--live img {
+.row__title--live img, .archive__live-seattle-heading img {
   float: left;
   width: auto;
   margin-right: 8px;
 }
-.row__title--live p {
+.row__title--live p, .archive__live-seattle-heading p {
   padding-top: 20px;
 }
 
@@ -536,6 +536,13 @@ li {
   padding: 0;
   margin: 40px 0 0 0;
   text-align: center;
+}
+
+.archive__live-seattle-heading {
+  background-color: silver;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 10px 25px 40px 10px;
 }
 
 .article-container {
