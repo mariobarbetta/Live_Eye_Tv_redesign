@@ -290,6 +290,14 @@
   text-align: center;
 }
 
+.archive__live-seattle-heading {
+  @extend .row__title--live;
+  background-color: $color2;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 10px 25px 40px 10px;
+}
+
 //Article pages
 
 .article-container {
