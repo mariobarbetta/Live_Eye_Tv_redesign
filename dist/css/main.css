@@ -577,10 +577,10 @@ article p {
   line-height: 1.2rem;
 }
 article p:first-of-type {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 article p:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 article blockquote {
   margin: 1rem 2rem;
@@ -601,7 +601,7 @@ figcaption {
 .author {
   font-size: 0.6em;
   display: block;
-  margin: 0 5px 5px 0;
+  margin: 0 5px 20px 0;
   padding: 0;
   text-align: right;
   text-indent: 50px;
