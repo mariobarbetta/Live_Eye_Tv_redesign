@@ -16,7 +16,6 @@ function scrollFunction() {
     document.getElementById("logo-lg").style.height = "auto";
     document.getElementById("header").style.paddingBottom = "4px";
     document.getElementById("slide-nav").style.left = "-120px";
-    document.getElementById("behind-header").style.height = "60px";
   } else {
     document.getElementById("lg-scrn-header").style.height = "168px";
     document.getElementById("lg-scrn-header").style.alignItems = "flex-end";
@@ -30,6 +29,5 @@ function scrollFunction() {
     document.getElementById("logo-lg").style.height = "auto";
     document.getElementById("header").style.paddingBottom = "20px";
     document.getElementById("slide-nav").style.left = "0";
-    document.getElementById("behind-header").style.height = "187px";
   }
 }

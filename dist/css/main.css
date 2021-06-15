@@ -114,6 +114,14 @@ section {
 
 body {
   line-height: 1;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 ol,
@@ -223,20 +231,19 @@ header {
 }
 
 .archive__main-content {
-  flex: 70%;
-  max-width: 70%;
+  flex: 100%;
+  max-width: 100%;
 }
 
 aside {
   position: sticky;
   top: -200px;
-  max-width: 26%;
+  max-width: 100%;
   height: fit-content;
   padding: 1rem;
-  margin-top: 33px;
-  margin-left: 18px;
+  margin: 0;
   background-color: silver;
-  flex: 26%;
+  flex: 100%;
   align-items: center;
 }
 aside div {
@@ -312,15 +319,23 @@ li {
 
 @media screen and (min-width: 900px) {
   .main {
-    margin-top: -15px;
+    margin-top: 190px;
   }
 
   header {
     padding-bottom: 20px;
   }
 
-  .behind-header {
-    display: block;
+  .archive__main-content {
+    flex: 70%;
+    max-width: 70%;
+  }
+
+  aside {
+    max-width: 26%;
+    margin-top: 33px;
+    margin-left: 18px;
+    flex: 26%;
   }
 }
 .lg-scrn-header {
@@ -380,21 +395,42 @@ li {
 .row--read {
   background-color: #e6e6e6;
 }
+.row--read .row__title h1::after {
+  background: #e6e6e6;
+}
 .row__title {
+  text-align: center;
   max-width: 100%;
   margin-bottom: 30px;
   flex: 100%;
 }
+.row__title h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.row__title h1::before,
 .row__title h1::after {
   position: absolute;
-  top: 40%;
-  right: 9%;
-  left: 110px;
+  top: 27%;
   display: block;
-  height: 4px;
-  margin-top: -3px;
+  height: 4%;
   content: "";
+}
+.row__title h1::before {
+  z-index: -2;
+  left: 50%;
+  width: 70vw;
+  transform: translateX(-50%);
   background: black;
+}
+.row__title h1::after {
+  z-index: -1;
+  top: 0;
+  right: -0.2em;
+  left: -0.2em;
+  height: 101%;
+  background: whitesmoke;
 }
 .row__title--live, .archive__live-seattle-heading {
   margin: 10px 10%;
@@ -412,23 +448,22 @@ li {
 .archive {
   display: flex;
   margin-top: 15px;
-  padding: 0 5% 50px 5%;
+  padding: 0 3% 50px 3%;
   color: black;
   justify-content: center;
   flex-wrap: wrap;
 }
 .archive__h1 {
   font-size: 2.2rem;
-  margin: 15px 0 50px 0;
+  margin: 5px 0 30px 0;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .archive-row {
   display: flex;
-  margin: 0 10px 10px 15px;
+  margin: 0 0 10px 0;
   padding: 22px 0 25px 0;
-  border-bottom: 1px solid #dad9d9;
   justify-content: left;
   flex-wrap: wrap;
 }
@@ -440,22 +475,27 @@ li {
 }
 .archive-row__image {
   overflow: hidden;
-  max-width: 28%;
+  max-width: 100%;
   height: 175px;
   margin: 5px;
   padding: 0 2px;
   background-color: #1f1e1e;
-  flex: 28%;
+  flex: 100%;
 }
 .archive-row__text {
   position: relative;
   display: inline-block;
-  max-width: 68%;
+  max-width: 100%;
   max-height: 280px;
-  margin: 5px;
-  padding: 0 2px;
-  padding-left: 10px;
-  flex: 68%;
+  margin: 0;
+  padding: 0 8px;
+  flex: 100%;
+}
+.archive-row__text h3 {
+  font-size: 1.1rem;
+}
+.archive-row__text p {
+  font-size: 0.9rem;
 }
 .archive-row img {
   position: relative;
@@ -481,6 +521,7 @@ li {
   color: whitesmoke;
   background-color: black;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .archive-row--of-the-week a {
   color: whitesmoke;
@@ -493,11 +534,11 @@ li {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  max-width: 90%;
+  max-width: 100%;
   max-height: 280px;
-  margin: 5px;
+  margin: 5px 5px 15px 5px;
   padding: 0 2px;
-  flex: 28%;
+  flex: 100%;
 }
 .archive-row--of-the-week__text h3 {
   margin-bottom: 8px;
@@ -509,9 +550,9 @@ li {
 }
 .archive-row--of-the-week__card-container {
   position: relative;
-  max-width: 60%;
+  max-width: 100%;
   height: 280px;
-  flex: 60%;
+  flex: 100%;
 }
 .archive-row--of-the-week__card-container .caption {
   left: 0;
@@ -519,8 +560,12 @@ li {
 }
 
 .read-archive-nav {
-  font-size: 1.5em;
+  font-size: 1em;
   padding-bottom: 0;
+  text-align: center;
+}
+.read-archive-nav span {
+  padding: 0 12px;
 }
 .read-archive-nav a {
   padding: 0 12px;
@@ -534,7 +579,7 @@ li {
 .read-archive-h1 {
   font-size: 1.5rem;
   padding: 0;
-  margin: 40px 0 0 0;
+  margin: -50px 0 0 0;
   text-align: center;
 }
 
@@ -548,16 +593,16 @@ li {
 .article-container {
   display: flex;
   margin-top: 15px;
-  padding: 50px 5%;
+  padding: 10px 3%;
   color: black;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 article {
-  max-width: 70%;
-  padding-right: 12px;
-  flex: 70%;
+  max-width: 100%;
+  padding-bottom: 20px;
+  flex: 100%;
 }
 article h1 {
   margin: 0;
@@ -568,7 +613,7 @@ article hr {
 }
 article img {
   display: block;
-  max-width: 550px;
+  max-width: 100%;
   height: auto;
   margin: 10px auto 0 auto;
 }
@@ -596,12 +641,13 @@ article a:hover {
 figcaption {
   text-align: center;
   font-size: 0.7em;
+  margin-top: 5px;
 }
 
 .author {
   font-size: 0.6em;
   display: block;
-  margin: 0 5px 20px 0;
+  margin: 2px 5px 20px 0;
   padding: 0;
   text-align: right;
   text-indent: 50px;
@@ -641,10 +687,13 @@ figcaption {
   display: inline-block;
   overflow: hidden;
   max-width: 20%;
-  height: 200px;
+  height: 250px;
   margin: 5px;
   padding: 2px;
   flex: 20%;
+}
+.four-col .caption__category {
+  font-size: 0.6rem;
 }
 
 .card {
@@ -711,6 +760,9 @@ figcaption {
   border-color: #ce1212;
 }
 
+.aside-social-icons {
+  margin-bottom: 15px;
+}
 .aside-social-icons a {
   font-size: 2rem;
   position: relative;
@@ -756,13 +808,22 @@ aside .fa-soundcloud {
   text-align: center;
 }
 
+.bunny-img {
+  width: 80%;
+  margin-top: 30px;
+}
+
 /* Make youtube embeds responsive */
 .iframe-container {
   position: relative;
   clear: both;
-  width: 80%;
+  width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+}
+
+iframe {
+  margin: 5px 0;
 }
 
 .iframe-container iframe {
@@ -812,20 +873,36 @@ ol.flickity-page-dots {
   letter-spacing: 18px;
 }
 
-@media screen and (max-width: 579px) {
-  h1::after {
-    right: 6%;
-  }
+.slogan {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+}
 
+@media screen and (max-width: 579px) {
   .row, .footer__row--nav {
     padding: 20px 5px 45px 5px;
   }
 
   .three-col-lg,
-.three-col,
-.four-col {
+.three-col {
     flex: 100%;
     max-width: 100%;
+    height: 250px;
+  }
+
+  .four-col {
+    flex: 45%;
+    max-width: 45%;
+    height: 170px;
+  }
+  .four-col .caption__h2 {
+    font-size: 0.55rem;
+  }
+  .four-col .caption__category {
+    padding: 2px 9px 4px 9px;
   }
 }
 @media screen and (min-width: 580px) and (max-width: 899px) {
@@ -844,6 +921,68 @@ ol.flickity-page-dots {
 @media screen and (min-width: 900px) {
   .hmbg-menu {
     display: none;
+  }
+
+  .four-col {
+    height: 200px;
+  }
+
+  .archive {
+    padding: 0 5% 50px 5%;
+  }
+
+  .archive__h1 {
+    margin: 15px 0 50px 0;
+  }
+
+  .archive-row {
+    margin: 0 10px 10px 15px;
+    padding: 22px 5px 25px 5px;
+    border-bottom: 1px solid #dad9d9;
+  }
+  .archive-row--of-the-week__text {
+    max-width: 90%;
+    flex: 28%;
+  }
+  .archive-row--of-the-week__card-container {
+    max-width: 60%;
+    flex: 60%;
+  }
+  .archive-row__image {
+    max-width: 28%;
+    flex: 28%;
+  }
+  .archive-row__text {
+    max-width: 68%;
+    margin: 5px;
+    padding: 0 2px 0 10px;
+    flex: 68%;
+  }
+
+  .article-container {
+    padding: 50px 5%;
+  }
+
+  article {
+    max-width: 70%;
+    padding-right: 12px;
+    padding-bottom: 0;
+    flex: 70%;
+  }
+  article img {
+    max-width: 550px;
+  }
+
+  .read-archive-nav {
+    font-size: 1.5em;
+  }
+
+  .read-archive-h1 {
+    margin: 40px 0 0 0;
+  }
+
+  .iframe-container {
+    width: 80%;
   }
 }
 .sidenav {
