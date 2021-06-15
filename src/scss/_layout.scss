@@ -22,8 +22,8 @@ header {
 
 //archive pages
 .archive__main-content {
-  flex: 70%;
-  max-width: 70%;
+  flex: 100%;
+  max-width: 100%;
 }
 
 //aside
@@ -31,15 +31,14 @@ aside {
   position: sticky;
   top: -200px;
 
-  max-width: 26%;
+  max-width: 100%;
   height: fit-content;
   padding: 1rem;
-  margin-top: 33px;
-  margin-left: 18px;
+  margin: 0;
 
   background-color: $color2;
 
-  flex: 26%;
+  flex: 100%;
   align-items: center;
 
   div {
@@ -134,14 +133,24 @@ li {
 
 @media screen and (min-width: 900px) {
   .main {
-    margin-top: -15px;
+    margin-top: 190px;
   }
 
   header {
     padding-bottom: 20px;
   }
 
-  .behind-header {
-    display: block;
+  .archive__main-content {
+    flex: 70%;
+    max-width: 70%;
+  }
+
+  aside {
+    max-width: 26%;
+
+    margin-top: 33px;
+    margin-left: 18px;
+
+    flex: 26%;
   }
 }
