@@ -44,6 +44,7 @@
       </div>
       <div class="hmbg-menu">
         <span id="hmbg" onclick="openNav()">&#9776; </span>
+        <img class="tv-image" src="../images/tv-static.gif" alt="tv with static" />
         <a href="../index.html">
           <img
             class="center"
@@ -54,52 +55,12 @@
       </div>
 
       <div class="lg-scrn-header" id="lg-scrn-header">
-        <div class="lg-scrn-header__top-row" id="top-header-l">
-          <span class="icon-spacing">
-            <a href="https://www.facebook.com/LiveEyeTv/" target="_blank">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/LiveEyeTv" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://soundcloud.com/live-eye-tv" target="_blank">
-              <i class="fa fa-soundcloud" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UC6DUHCW_4r3BKtJRhEGS-1w"
-              target="_blank"
-            >
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-          </span>
-        </div>
-        <div class="lg-scrn-header__top-row" id="top-header-r">
-          <span class="text-right about-link"
-            ><a href="../about.html">about/contact</a></span
-          >
-        </div>
-        <div class="lg-scrn-header__bottom-row" id="menu-lg-col">
-          <nav id="slide-nav">
-            <ul>
-              <li><a href="../videos/videos.html">watch</a></li>
-              <li><a href="../listen/listen.html">listen</a></li>
-              <li><a href="interviews.html">read</a></li>
-              <li><a href="../look/photos.html">look</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="lg-scrn-header__bottom-row logo" id="logo-lg-col">
-          <a href="../index.html">
-            <img
-              id="logo-lg"
-              src="../images/live-eye-logo-lg-white.png"
-              alt="Live Eye Tv logo"
-            />
-          </a>
-        </div>
-
-        <div class="lg-scrn-header__bottom-row" id="search-lg-col">
+        <div class="lg-scrn-header__top-row" id="header-top-row">
+          <div class="logo">
+            <img class="tv-image" src="../images/tv-static.gif" alt="tv with static" />
+            <a href="../index.html"><img src="../images/live-eye-logo-lg-white.png" alt="Live Eye Tv logo" /></a>
+          </div>      
+                
           <div class="search-bar-container">
             <script
               async
@@ -107,6 +68,32 @@
             ></script>
             <div class="gcse-search"></div>
           </div>
+        </div>
+        
+        <div class="lg-scrn-header__bottom-row" id="header-bottom-row">
+          <hr id="header-hr" />
+          <div class="left-nav">
+            <img src="../images/tv-static.gif" id="slide-tv" alt="tv with static" />
+            <nav class="slide-nav" id="slide-nav">
+              <ul>
+                <li>::<a href="../videos/videos.html">watch</a></li>
+                <li><a href="../listen/listen.html">listen</a></li>
+                <li><a href="../read/interviews.html">read</a></li>
+                <li><a href="../look/photos.html">look</a></li>
+              </ul>
+            </nav>
+          </div>                
+          <div>
+            <nav class="right-nav">
+              <ul>
+                <li><a href="../about.html" class="right-nav__about-link">about</a></li>
+                <li>
+                  <a href="../live_in_Seattle/live_seattle.html" class="right-nav__Live-Seattle-link"
+                    >Live in Seattle</a
+                  >
+                </li>
+              </ul>
+            </nav>
         </div>
       </div>
     </header>
