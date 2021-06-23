@@ -1,48 +1,129 @@
 @use 'colors' as *;
 
-// Header
+// Headers
 
+// --mobile headere
+
+.hmbg-menu {
+  padding: 5px;
+
+  .tv-image {
+    height: 50px;
+    margin-right: 5px;
+  }
+}
+
+// --large screen header
 .lg-scrn-header {
-  display: flex;
-
-  height: 168px;
-  padding: 8px;
+  height: 210px;
+  padding: 12px;
+  color: $color2;
+  letter-spacing: 3px;
 
   transition: height 200ms ease-in-out, align-items 200ms ease-in-out;
 
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  align-content: space-between;
+  hr {
+    position: relative;
+    top: 10px;
+
+    width: 100%;
+    margin: 8px 0;
+
+    border-width: 0.5px;
+    border-top: 0.5px solid black;
+  }
 
   &__top-row {
-    max-width: 50%;
+    display: flex;
 
-    flex: 50%;
+    padding-left: 9%;
+
+    transition: display 200ms ease-in-out;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+
+    .tv-image {
+      height: 100px;
+    }
   }
 
   &__bottom-row {
-    max-width: 33%;
+    display: flex;
 
-    flex: 33%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .left-nav {
+      width: 40%;
+
+      img {
+        position: relative;
+        right: 100px;
+
+        float: left;
+
+        height: 65px;
+        margin-left: 70px;
+
+        transition: right ease-out 250ms;
+        // transition: opacity ease-out 100ms;
+
+        opacity: 0;
+      }
+    }
+
+    .right-nav {
+      float: right;
+
+      &__about-link {
+        font-size: 0.7rem;
+
+        position: relative;
+        bottom: 1px;
+      }
+
+      &__Live-Seattle-link {
+        font-size: 1rem;
+        font-weight: bold;
+
+        color: $color1;
+
+        &:hover {
+          font-weight: normal;
+
+          color: $color2;
+        }
+      }
+
+      a {
+        letter-spacing: 0px;
+      }
+    }
   }
 }
 
 .slide-nav {
   position: relative;
-  left: 0;
+  left: -90px;
+  top: 23px;
   transition: left ease-in-out 250ms;
 }
 
 .search-bar-container {
   float: right;
 
-  width: 60%;
   margin-bottom: -7px;
 }
 
 /* Google search bar */
 .gsc-control-cse {
+  padding: 0 !important;
+
   border-color: transparent !important;
   background-color: transparent !important;
 }
@@ -94,22 +175,6 @@
 
       margin: 0;
     }
-
-    // h1::after {
-    //   position: absolute;
-    //   top: 40%;
-    //   right: 9%;
-    //   left: 110px;
-
-    //   display: block;
-
-    //   height: 4px;
-    //   margin-top: -3px;
-
-    //   content: "";
-
-    //   background: black;
-    // }
 
     // for Kevin Powell thing -
     h1::before,

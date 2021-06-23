@@ -4,30 +4,22 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("lg-scrn-header").style.height = "60px";
-    document.getElementById("lg-scrn-header").style.alignItems = "center";
-    document.getElementById("top-header-l").style.display = "none";
-    document.getElementById("top-header-r").style.display = "none";
-    document.getElementById("search-lg-col").style.visibility = "hidden";
-    document.getElementById("menu-lg-col").style.order = "2";
-    document.getElementById("logo-lg-col").style.order = "1";
-    document.getElementById("search-lg-col").style.order = "3";
-    document.getElementById("logo-lg").style.width = "40%";
-    document.getElementById("logo-lg").style.height = "auto";
-    document.getElementById("header").style.paddingBottom = "4px";
-    document.getElementById("slide-nav").style.left = "-120px";
+    document.getElementById("lg-scrn-header").style.height = "90px";
+    document.getElementById("header-bottom-row").style.height = "55px";
+    document.getElementById("slide-nav").style.left = "50px";
+    document.getElementById("header-top-row").style.display = "none";
+    document.getElementById("header-hr").style.top = "-8px";
+    document.getElementById("header-hr").style.marginBottom = "0px";
+    document.getElementById("slide-tv").style.right = "-25px";
+    document.getElementById("slide-tv").style.opacity = "1";
   } else {
-    document.getElementById("lg-scrn-header").style.height = "168px";
-    document.getElementById("lg-scrn-header").style.alignItems = "flex-end";
-    document.getElementById("top-header-l").style.display = "block";
-    document.getElementById("top-header-r").style.display = "block";
-    document.getElementById("search-lg-col").style.visibility = "visible";
-    document.getElementById("menu-lg-col").style.order = "1";
-    document.getElementById("logo-lg-col").style.order = "2";
-    document.getElementById("search-lg-col").style.order = "3";
-    document.getElementById("logo-lg").style.width = "auto";
-    document.getElementById("logo-lg").style.height = "auto";
-    document.getElementById("header").style.paddingBottom = "20px";
-    document.getElementById("slide-nav").style.left = "0";
+    document.getElementById("lg-scrn-header").style.height = "210px";
+    document.getElementById("header-bottom-row").style.height = "88px";
+    document.getElementById("slide-nav").style.left = "-90px";
+    document.getElementById("header-top-row").style.display = "flex";
+    document.getElementById("header-hr").style.top = "10px";
+    document.getElementById("header-hr").style.marginBottom = "8px";
+    document.getElementById("slide-tv").style.right = "100px";
+    document.getElementById("slide-tv").style.opacity = "0";
   }
 }
