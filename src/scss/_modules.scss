@@ -384,6 +384,10 @@
         left: 0;
         width: 101%;
       }
+
+      .caption__category {
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -548,6 +552,10 @@ figcaption {
   padding: 0 2px;
 
   flex: 40%;
+
+  .caption__category {
+    font-size: 0.9rem;
+  }
 }
 
 .four-col {
@@ -632,7 +640,7 @@ figcaption {
   }
 
   &__category {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: normal;
 
     display: inline-block;
@@ -646,6 +654,10 @@ figcaption {
     color: rgb(255, 255, 255);
     border-radius: 50px;
     background-image: linear-gradient(220deg, $color1, $color3);
+
+    &:hover {
+      background-image: linear-gradient(220deg, black, black);
+    }
   }
 
   hr {
