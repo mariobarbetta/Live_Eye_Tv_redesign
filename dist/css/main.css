@@ -609,6 +609,9 @@ li {
   left: 0;
   width: 101%;
 }
+.archive-row--of-the-week__card-container .caption__category {
+  font-size: 0.9rem;
+}
 
 .read-archive-nav {
   font-size: 1em;
@@ -732,6 +735,9 @@ figcaption {
   padding: 0 2px;
   flex: 40%;
 }
+.three-col-lg .caption__category {
+  font-size: 0.9rem;
+}
 
 .four-col {
   position: relative;
@@ -792,7 +798,7 @@ figcaption {
   padding: 8px;
 }
 .caption__category {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: normal;
   display: inline-block;
   margin: 0 4px 4px 0;
@@ -802,6 +808,9 @@ figcaption {
   color: white;
   border-radius: 50px;
   background-image: linear-gradient(220deg, #ce1212, #940b0b);
+}
+.caption__category:hover {
+  background-image: linear-gradient(220deg, black, black);
 }
 .caption hr {
   width: 0;
