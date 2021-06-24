@@ -437,6 +437,10 @@ li {
   justify-content: center;
   flex-wrap: wrap;
 }
+.row--top-row {
+  flex: 80%;
+  max-width: 80%;
+}
 .row--live-seattle {
   background-color: silver;
 }
@@ -494,6 +498,23 @@ li {
 }
 .row__title--live p, .archive__live-seattle-heading p {
   padding-top: 20px;
+}
+.row aside, .footer__row--nav aside {
+  max-width: 18%;
+  margin-top: 5px;
+  margin-left: 0;
+  padding: 8px;
+  flex: 18%;
+}
+.row aside h2, .footer__row--nav aside h2 {
+  font-size: 1.1rem;
+  padding-left: 4px;
+}
+.row aside .aside-social-icons a, .footer__row--nav aside .aside-social-icons a {
+  padding-right: 7px;
+}
+.row aside .ad-image, .footer__row--nav aside .ad-image {
+  width: 100%;
 }
 
 .archive {
@@ -729,11 +750,11 @@ figcaption {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  max-width: 40%;
+  max-width: 38%;
   height: 275px;
   margin: 5px;
   padding: 0 2px;
-  flex: 40%;
+  flex: 38%;
 }
 .three-col-lg .caption__category {
   font-size: 0.9rem;
@@ -944,6 +965,16 @@ ol.flickity-page-dots {
 @media screen and (max-width: 579px) {
   .row, .footer__row--nav {
     padding: 20px 5px 45px 5px;
+  }
+
+  .row--top-row {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .row aside, .footer__row--nav aside {
+    max-width: 95%;
+    flex: 95%;
   }
 
   .three-col-lg,
